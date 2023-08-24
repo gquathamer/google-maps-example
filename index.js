@@ -29,6 +29,7 @@ async function initMap() {
     maxZoom: 20
   })
 
-  map.mapTypes.set(layerID, lightboxTileLayer);
-  map.setMapTypeId(layerID);
+  /* map.mapTypes.set(layerID, lightboxTileLayer);
+  map.setMapTypeId(layerID); */
+  map.overlayMapTypes.push(lightboxTileLayer);
 }
