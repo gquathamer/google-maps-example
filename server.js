@@ -7,8 +7,8 @@ app.get('/getTile/:zoom/:x/:y', (req, res) => {
     fetch(`https://api.lightboxre.com/v1/parcels/us/tile/${req.params.zoom}/${req.params.x}/${req.params.y}`, { 
         headers: {
             "Content-Type": "image/png",
+            // Your Lightbox key will come from the .env file
             "x-api-key": process.env.LIGHTBOX_API_KEY
-        // 'Content-Type': 'application/x-www-form-urlencoded',
         }
     })
         .then(response => response.arrayBuffer())
