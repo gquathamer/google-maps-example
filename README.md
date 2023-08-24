@@ -15,13 +15,15 @@ A basic google map with Lightbox tiles
 
         `LIGHTBOX_API_KEY="MY_LIGHTBOX_API_KEY"`
 
-4.Start up the proxy server using nodemon
+4.Paste your Google Maps API key into 'basic-tile-layer.html' in the client folder
+
+5.Start up the proxy server using nodemon
 
         `npm run dev`
 
-5.Use something like live server to serve the html file found in the 'client' directory.
+6.Use something like live server to serve the html file found in the 'client' directory.
 
-6.You should be seeing Lightbox tiles over the Google roadmap:
+7.You should be seeing Lightbox tiles over the Google roadmap:
 ![alt text](./Capture.PNG "Tile View")
 
 ## Proxy Server
